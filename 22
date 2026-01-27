@@ -1,0 +1,36 @@
+while True:
+    if kazna2.gold <= 5:
+        print("Деньги кончились вы проиграли")
+        break
+    else:
+        continue
+
+ def nalog(self):
+        self.gold = self.gold + 2
+
+class rudnik:
+    def __init__(self,nalog = 2):
+        self.nalog = nalog
+
+
+
+
+
+
+list1 = input("Введите массив = ")
+a = 0
+
+for i in list1:
+    if i.lower() in ["r","k","t",]:
+        a += 1
+    else:
+        continue
+
+print(a)
+
+
+list1 = input("Введите массив = ")
+sim = list1.find("#")
+pos_sim = len(list1) - sim - 1
+print(pos_sim)
+
