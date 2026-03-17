@@ -1,0 +1,34 @@
+import pandas as pd
+
+s = pd.Series([1,2,3,4,5])
+print(s)
+
+e = pd.Series([1,5,10], index = ["a","b","c"])
+print(e)
+print(e["b"])
+
+r = pd.Series([1,2,3,4,5,6,7,8,9,10])
+filtr = r[r>=5]
+print(filtr)
+
+i = pd.Series([1,2,3,4,5])
+print(s + 2)
+print(s * 2)
+
+e2 = pd.Series([1,2,3,4,5,6,7,8,9,10])
+print(f"Максимум = {e2.max()}")
+print(f"Минимум = {e2.min()}")
+
+s2 = pd.Series([1,2,2,3,4,4,4,5,6,7,8,8,2,3,4])
+print(s2.unique())
+print(s2.nunique())
+
+d = pd.Series([4,2,3,1,5], index = ["b","d","c","a","e"])
+print("по значениям")
+print(d.sort_values())
+
+print("по индексу")
+print(d.sort_index())
+
+z = pd.Series([1,"Hello",3,4.5,False])
+print(z.apply(type))
