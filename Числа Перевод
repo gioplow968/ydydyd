@@ -1,0 +1,44 @@
+# while True:
+#
+#     n = int(input("Введите число = "))
+#     raz = []
+#     if n == 0:
+#         print("-" * 25)
+#         print("Итог = [0]")
+#         break
+#
+#
+#     print(f"Перевод числа {n} в двоичную систему:")
+#     print("-" * 25)
+#
+#     while n > 0:
+#         ost = n % 2
+#         cel = n // 2
+#         raz.append(ost)
+#
+#         print(f"{n} // 2 = {cel}, остаток = {ost}")
+#         n = cel
+#
+#     raz.reverse()
+#     print(f"Итог = {raz}")
+#     break
+
+
+# b = input("Введите двоичное число: ")
+# rez = 0
+# pow = 0
+# i = len(b) - 1
+# 
+# while True:
+#     if i < 0:
+#         break
+# 
+#     per = b[i]
+# 
+#     if per == '1':
+#         rez  = rez  + (2 ** pow)
+# 
+#     pow = pow + 1
+#     i = i - 1
+# 
+# print(f"Результат: {rez}")
