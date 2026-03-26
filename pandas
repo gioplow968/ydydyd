@@ -1,5 +1,23 @@
 import pandas as pd
 
+predl = input("Введите предложение для перевода = ")
+print("---------------")
+rez = " ".join(format(ord(a),"08b")for a in predl)
+rez1 = " ".join(format(b,"08b")for b in predl.encode("utf-8"))
+rez2 = " ".join([format(ord(c),"08b")for c in predl])
+
+print(f"Вариант1 = {rez}")
+print("---------------")
+print(f"Вариант2 = {rez1}")
+print("---------------")
+print(f"Вариант3 = {rez2}")
+print("---------------")
+
+
+
+
+
+
 s = pd.Series([1,2,3,4,5])
 print(s)
 
