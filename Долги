@@ -1,0 +1,103 @@
+# ООП
+# st = "\"Не верю77! ск431аза7л \" - К.Станиславский"
+# no_digit = "".join(i for i in st if not i.isdigit())
+# rez = no_digit.replace('Не верю',"НЕ ВЕРЮ")
+# print(rez)
+
+# print("-------------")
+# №2
+# class Stud:
+#     s = 0
+#
+#     def __init__(self,name):
+#         Stud.s += 1
+#         self.N = Stud.s
+#         self.name = name
+#
+# st1 = Stud("Миша")
+# st2 = Stud("Леша")
+# st3 = Stud("Вика")
+# print(Stud.s)
+# print(st2.N)
+
+
+# print("-------------")
+#
+# import numpy as np
+#
+# arr = np.random.randint(0,5,size=(3,3))
+# print(arr)
+#
+# print(arr.sum(axis=0))
+# print(arr.sum(axis=1))
+# rez1 = np.trace(arr)
+# rez2 = np.fliplr(arr).diagonal().sum()
+# print(rez1,rez2)
+
+# print("-------------")
+
+import numpy as np
+
+# arr = np.array([1,2,3,4,5])
+# arr1 = np.zeros((3,3))
+# arr2 = np.ones(3,3)
+# arr3 = np.full((3,3),5)
+# arr4 = np.arange(0,10,2)
+# arr5 = arr.sum()
+# arr6 = arr.mean()
+# arr7 = np.median(arr)
+# arr8 = arr.min()
+# arr9 = arr.max()
+# arr10 = arr.std()
+# arr11 = arr.var()
+# arr12 = arr.prod()
+# arr13 = arr.cumsum()
+# arr14 = arr.reshape(2,2)
+# arr15 = arr.flatten()
+# arr16 = arr.ravel()
+# arr17 = arr.T
+# arr18 = arr.resize(4,7)
+# arr19 = np.where(arr>3)
+# arr20 = np.take(0,3)
+# arr21 = np.unique([1,2,2,2,3,3,4,5,5])
+# arr22 = np.sort([3,7,5,1,2])
+# a = np.array([1,2,3,4,5])
+# b = np.array([5,3,6,3,1])
+# arr23 = np.dot(a,b)
+# arr24 = np.concatenate([a,b])
+# arr25 = np.stack([a,b])
+# arr26 = np.split(np.array([2,3,4,5,1]),2)
+# arr27 = np.random.randint(0,10,size=(3,3))
+# arr28 = np.random.rand(3,3)
+# arr29 = np.random.normal(0,1,20)
+# arr30 = np.random.choice([1,2,3,4,5],size=1)
+
+
+#Системное програмирование
+
+# print("-------------")
+#
+# import random
+#
+# z = "абвгдеежзийклмнопрстуфхцчшщъыьэюя"
+#
+# pred = input("Введите ваше предложение(минимум 4 слова!) = ")
+# sl = pred.split()
+#
+# if len(sl) < 4:
+#  print("Введите предложения содержащие более 4 слов!!")
+# else:
+#     rez = []
+#
+#     for i in sl:
+#         if i.isdigit() and 1 <= int(i) <= 5:
+#             nv = ""
+#             for j in range(int(i)):
+#                 nv = nv + random.choice(z)
+#             rez.append([nv,len(nv)])
+#         else:
+#             rez.append([len(i),len(str(len(i)))])
+#     for l in rez:
+#         print(f"Значение {l[0]},{l[1]}")
+#
+# print("-------------")
