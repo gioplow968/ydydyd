@@ -27,10 +27,11 @@ from tabulate import tabulate
 from pandas.core.methods.selectn import DataFrame
 from prettytable import PrettyTable
 
-# df = sns.load_dataset('titanic')
+df = pd.read_csv('titanic.csv')
 # plt.figure(figsize=(6, 4))
 # sns.histplot(data=df)
 # plt.show()
+# 
 #
 # plt.figure(figsize=(6, 4))
 # sns.scatterplot(data=df, x="bill_length_mm", y="bill_depth_mm")
