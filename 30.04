@@ -1,0 +1,29 @@
+# import json
+# import urllib.request
+# import requests
+#
+# res = urllib.request.urlopen("http://jsonplaceholder.typicode.com/users")
+# rez = json.load(res)
+#
+# print(tabulate(rez,headers="keys",tablefmt="pretty"))
+
+# def summa(z):
+#     a = 0
+#     for i in str(z):
+#         b = int(i)
+#         if b % 2 == 0 and b > 0:
+#             a += b
+#     return a
+#
+# def max_ch(m, n):
+#     result = 0
+#     for j in range(m, n + 1):
+#         s = summa(j)
+#         if s > 0 and s % 3 == 0:
+#             result = j
+#     return result
+#
+# m = int(input("Введите начало диапазона = "))
+# n = int(input("Введите конец диапазона = "))
+# rez = max_ch(m, n)
+# print(rez)
