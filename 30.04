@@ -1,11 +1,17 @@
-# import json
-# import urllib.request
-# import requests
-#
-# res = urllib.request.urlopen("http://jsonplaceholder.typicode.com/users")
-# rez = json.load(res)
-#
-# print(tabulate(rez,headers="keys",tablefmt="pretty"))
+import json
+import urllib.request
+
+
+
+res = urllib.request.urlopen("http://jsonplaceholder.typicode.com/users")
+rez = json.load(res)
+
+print(tabulate(rez,headers="keys",tablefmt="pretty"))
+print("---------------")
+print(json.dumps(rez))
+print("---------------")
+df = pd.DataFrame(rez)
+print(df)
 
 # def summa(z):
 #     a = 0
