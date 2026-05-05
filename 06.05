@@ -1,0 +1,9 @@
+import json
+import urllib.request
+from tabulate import tabulate
+
+
+res = urllib.request.urlopen("http://jsonplaceholder.typicode.com/users")
+rez = json.load(res)
+
+print(tabulate(rez,headers="keys",tablefmt="pretty"))
